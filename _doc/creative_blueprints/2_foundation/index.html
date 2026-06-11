@@ -1,0 +1,87 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 3rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-main { width: 60%; }
+  .mode-landscape .sl-img { width: 40%; }
+  .mode-portrait .sl-img { display: none; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full p-10">
+
+    <!-- Main: Problem + Solution -->
+    <div class="sl-main flex flex-col justify-between">
+      <p class="text-xs font-bold uppercase tracking-widest text-slate-400">The Problem &amp; The Solution</p>
+
+      <!-- Problem -->
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center gap-2.5">
+          <div class="w-7 h-7 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+              <path d="M12 9v4m0 4h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-black text-slate-900">The Problem</h3>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed pl-9">
+          Client feedback lives in email threads, Slack, Zoom recordings, and chat apps — simultaneously everywhere and nowhere. Revision requests go untracked. The "final" file is never the right file. Projects slip because nobody can confirm what was approved, by whom, or against which version.
+        </p>
+        <div class="flex flex-col gap-1.5 pl-9">
+          <div class="flex items-start gap-2">
+            <span class="text-red-400 font-bold text-xs mt-0.5 flex-shrink-0">✕</span>
+            <span class="text-xs text-slate-500">Feedback scattered across 5+ communication channels</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="text-red-400 font-bold text-xs mt-0.5 flex-shrink-0">✕</span>
+            <span class="text-xs text-slate-500">No single version of truth for approvals or revisions</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="text-red-400 font-bold text-xs mt-0.5 flex-shrink-0">✕</span>
+            <span class="text-xs text-slate-500">Context lost in translation — projects stall, margins erode</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-full h-px bg-slate-100"></div>
+
+      <!-- Solution -->
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center gap-2.5">
+          <div class="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+              <path d="M20 6 9 17l-5-5" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-black text-slate-900">The Solution</h3>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed pl-9">
+          A dedicated project workspace per client engagement — every file, annotation, discussion, revision round, and formal approval decision captured together. Visible to both agency and client. Always current. Always traceable.
+        </p>
+        <div class="flex flex-col gap-1.5 pl-9">
+          <div class="flex items-start gap-2">
+            <span class="text-blue-500 font-bold text-xs mt-0.5 flex-shrink-0">→</span>
+            <span class="text-xs text-slate-500">One workspace per project — files, feedback, and decisions in one view</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="text-blue-500 font-bold text-xs mt-0.5 flex-shrink-0">→</span>
+            <span class="text-xs text-slate-500">Visual annotations and timestamped video feedback eliminate ambiguity</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="text-blue-500 font-bold text-xs mt-0.5 flex-shrink-0">→</span>
+            <span class="text-xs text-slate-500">Formal approval decisions and full version history — documented, permanent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual -->
+    <div class="sl-img rounded-2xl overflow-hidden">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=Split%20editorial%20illustration%3A%20left%20half%20shows%20chaotic%20email%20and%20chat%20notifications%20overflowing%2C%20right%20half%20shows%20a%20clean%20organized%20project%20review%20workspace%20with%20approval%20status%2C%20blue%20tones%2C%20professional"
+        class="w-full h-full object-cover"
+        alt="Problem vs solution illustration"
+      />
+    </div>
+
+  </div>
+</section>
