@@ -1,0 +1,50 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-col { width: 52%; }
+  .mode-landscape .sl-visual { width: 48%; }
+  .mode-portrait .sl-col { width: 100%; }
+  .mode-portrait .sl-visual { width: 100%; height: 38%; flex-shrink: 0; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Content -->
+    <div class="sl-col flex flex-col justify-between p-12">
+      <!-- Tag chip -->
+      <div>
+        <span class="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold px-3 py-1.5 rounded-full tracking-widest uppercase">
+          Client Review Platform
+        </span>
+      </div>
+
+      <!-- Headline + tagline -->
+      <div class="flex flex-col gap-5">
+        <h1 class="text-6xl font-black leading-none tracking-tight text-slate-900">
+          Every revision.<br>
+          Every approval.<br>
+          <span class="text-blue-600">One place.</span>
+        </h1>
+        <p class="text-base text-slate-500 leading-relaxed" style="max-width: 320px;">
+          The centralized review workspace that helps marketing agencies and their clients close projects faster — with zero lost feedback.
+        </p>
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Full-bleed image -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=Professional%20marketing%20agency%20client%20approval%20dashboard%20UI%2C%20file%20review%20interface%20with%20annotation%20tools%2C%20clean%20modern%20blue%20and%20white%20design%2C%20soft%20studio%20light%2C%20premium%20editorial"
+        class="w-full h-full object-cover"
+        alt="Client review platform dashboard"
+      />
+      <div class="absolute inset-0" style="background: linear-gradient(to right, white 0%, rgba(255,255,255,0.35) 28%, transparent 58%);"></div>
+    </div>
+
+  </div>
+</section>
