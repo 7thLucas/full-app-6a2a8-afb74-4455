@@ -1,0 +1,17 @@
+{
+  "name": "@qb/google_authentication",
+  "version": "1.0.0",
+  "description": "Google OAuth 2.0 sign-in module — server-side authorization-code flow that issues the same auth_token cookie used by @qb/authentication",
+  "type": "module",
+  "main": "index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "dependencies": {
+    "cookie": "^1.0.2",
+    "google-auth-library": "^9.14.0"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.6.0"
+  }
+}

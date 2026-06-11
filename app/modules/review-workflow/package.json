@@ -1,0 +1,14 @@
+{
+  "name": "@qb/review-workflow",
+  "version": "1.0.0",
+  "description": "Headless review project workflow, invitation, status, and capability policy module",
+  "type": "module",
+  "main": "index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "dependencies": {
+    "@qb/authentication": "file:../authentication",
+    "@qb/file-review": "file:../file-review"
+  }
+}
