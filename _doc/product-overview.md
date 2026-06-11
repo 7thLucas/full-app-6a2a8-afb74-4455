@@ -1,6 +1,7 @@
 # Client Review & Approval Platform
 
 ## Product Identity
+**Product name:** ReviewFlow  
 **Type:** B2B SaaS workflow platform  
 **Category:** Creative project delivery & client collaboration  
 **Primary audience:** Marketing agencies (agency staff) and their clients  
