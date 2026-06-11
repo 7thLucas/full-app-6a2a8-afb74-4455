@@ -1,0 +1,97 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10 gap-4">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between gap-4">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-slate-400">North Star Metric</p>
+        <h2 class="text-2xl font-black text-slate-900">Approval Decisions Made — Weekly</h2>
+        <p class="text-xs text-slate-500 mt-1">The core event this platform exists to produce: a client submits a formal approve or revision-request on a deliverable.</p>
+      </div>
+      <span class="bg-amber-100 border border-amber-300 text-amber-800 text-xs font-semibold px-3 py-1.5 rounded-full flex-shrink-0 whitespace-nowrap">Projected — adjust to fit your agency</span>
+    </div>
+
+    <!-- Main content: formula left, impact right -->
+    <div class="flex gap-5 flex-1">
+
+      <!-- Left column: WVO + Value derivation -->
+      <div class="flex flex-col gap-4 flex-1">
+
+        <!-- WVO formula box -->
+        <div class="rounded-xl bg-slate-50 border border-slate-200 p-4 flex flex-col gap-3">
+          <p class="text-xs font-bold text-slate-500 uppercase tracking-wide">WVO Formula</p>
+          <div class="flex items-center gap-2 flex-wrap">
+            <div class="text-center bg-white rounded-lg border border-amber-300 px-2.5 py-1.5">
+              <p class="text-base font-black text-amber-700">8</p>
+              <p class="text-xs text-slate-400">active projects</p>
+              <p class="text-xs text-amber-600 font-semibold italic">assumption</p>
+            </div>
+            <span class="text-slate-400 font-bold">×</span>
+            <div class="text-center bg-white rounded-lg border border-amber-300 px-2.5 py-1.5">
+              <p class="text-base font-black text-amber-700">3</p>
+              <p class="text-xs text-slate-400">deliverables / wk</p>
+              <p class="text-xs text-amber-600 font-semibold italic">assumption</p>
+            </div>
+            <span class="text-slate-400 font-bold">×</span>
+            <div class="text-center bg-white rounded-lg border border-amber-300 px-2.5 py-1.5">
+              <p class="text-base font-black text-amber-700">1.5</p>
+              <p class="text-xs text-slate-400">rounds / deliverable</p>
+              <p class="text-xs text-amber-600 font-semibold italic">assumption</p>
+            </div>
+            <span class="text-slate-400 font-bold">=</span>
+            <div class="text-center bg-blue-600 rounded-lg px-4 py-2">
+              <p class="text-lg font-black text-white">36</p>
+              <p class="text-xs text-blue-200">decisions / week</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Value derivation box -->
+        <div class="rounded-xl bg-slate-50 border border-slate-200 p-4 flex flex-col gap-2.5 flex-1">
+          <p class="text-xs font-bold text-slate-500 uppercase tracking-wide">Value Derivation</p>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-start gap-2">
+              <span class="text-xs text-slate-400 font-bold w-4 flex-shrink-0 mt-0.5">1.</span>
+              <span class="text-xs text-slate-600">Each decision avoids <span class="text-amber-700 font-semibold bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded">45 min coordination</span> — email threads, clarifications, and version-hunting eliminated</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-xs text-slate-400 font-bold w-4 flex-shrink-0 mt-0.5">2.</span>
+              <span class="text-xs text-slate-600">Agency staff cost: <span class="text-amber-700 font-semibold bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded">$60 / hr blended</span> (assumption — adjust to your rate)</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-xs text-slate-400 font-bold w-4 flex-shrink-0 mt-0.5">3.</span>
+              <span class="text-xs text-slate-600">Per operation: 0.75 hr × $60 = <span class="font-bold text-slate-800">$45 saved</span></span>
+            </div>
+            <div class="h-px bg-slate-200 my-0.5"></div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-400 font-bold w-4 flex-shrink-0">→</span>
+              <span class="text-sm text-slate-700 font-semibold">36 decisions / wk × $45 = <span class="text-slate-900 font-black">$1,620 / week</span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right column: Annual impact + second operation -->
+      <div class="flex flex-col gap-4" style="width: 210px; flex-shrink: 0;">
+
+        <div class="rounded-xl bg-blue-600 p-5 flex flex-col gap-1 items-center justify-center text-center flex-1">
+          <p class="text-xs font-bold text-blue-200 uppercase tracking-wider">Projected Annual Value</p>
+          <p class="text-4xl font-black text-white mt-2 leading-none">$84,240</p>
+          <p class="text-blue-200 text-xs mt-1">$1,620 / wk × 52 weeks</p>
+          <div class="w-full h-px bg-blue-500 my-3"></div>
+          <p class="text-xs text-blue-200 leading-snug">Staff time recovered from email coordination, version hunting, and untracked revision management</p>
+        </div>
+
+        <div class="rounded-xl bg-slate-800 p-4 flex flex-col gap-1">
+          <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Second Operation</p>
+          <p class="text-sm font-bold text-white">Revision Round<br>Completed</p>
+          <p class="text-xs text-slate-400 leading-snug mt-1">A full upload → review → decision cycle closed. Tracks total rounds completed per week.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
